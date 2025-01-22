@@ -1,0 +1,54 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.header-bg {
+    background: linear-gradient(to right, #FB7B91, #FFB3C7);
+    animation: bgAnimation 10s infinite alternate;
+}
+
+@keyframes bgAnimation {
+    from {
+        background: linear-gradient(to right, #FB7B91, #FFB3C7);
+    }
+    to {
+        background: linear-gradient(to right, #FFB3C7, #FB7B91);
+    }
+}
+
+h2 {
+    font-weight: bold;
+    color: #FB7B91;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #FB7B91;
+    border-radius: 5px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.feature-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+    font-size: 24px;
+}
